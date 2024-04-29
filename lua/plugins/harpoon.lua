@@ -1,3 +1,5 @@
+-- Plugin: Harpoon
+-- https://github.com/ThePrimeagen/harpoon
 return {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
@@ -10,7 +12,7 @@ return {
         vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end, { desc = "Harpoon Mark" })
         vim.keymap.set("n", "<leader>x", function() harpoon:list():remove() end, { desc = "Harpoon Unmark" })
 
-	-- basic telescope configuration
+        -- basic telescope configuration
         local conf = require("telescope.config").values
         local function toggle_telescope(harpoon_files)
             local file_paths = {}
@@ -43,8 +45,8 @@ return {
 
         -- Toggle previous & next buffers stored within Harpoon list
         vim.keymap.set("n", "<A-,>", function() harpoon:list():prev() end)
-        vim.keymap.set("n", "<leader>h", function() harpoon:list():prev() end)
         vim.keymap.set("n", "<A-.>", function() harpoon:list():next() end)
+        vim.keymap.set("n", "<leader>h", function() harpoon:list():prev() end)
         vim.keymap.set("n", "<leader>l", function() harpoon:list():next() end)
     end
 }

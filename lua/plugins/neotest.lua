@@ -1,3 +1,5 @@
+-- Plugin: neotest
+-- https://github.com/nvim-neotest/neotest
 return {
 	{
 		"nvim-neotest/neotest",
@@ -8,12 +10,14 @@ return {
 			"marilari88/neotest-vitest",
 			"nvim-neotest/neotest-plenary",
 			"nvim-neotest/nvim-nio",
+            "nvim-neotest/neotest-go",
 		},
 		config = function()
 			local neotest = require("neotest")
 			neotest.setup({
 				adapters = {
 					require("neotest-vitest"),
+                    require("neotest-go"),
 					require("neotest-plenary").setup({
 						-- this is my standard location for minimal vim rc
 						-- in all my projects
