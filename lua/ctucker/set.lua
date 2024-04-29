@@ -7,6 +7,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
 
+vim.opt.ff = "unix"
 vim.opt.clipboard = "unnamed,unnamedplus"
 vim.opt.swapfile = false
 vim.opt.backup = false
