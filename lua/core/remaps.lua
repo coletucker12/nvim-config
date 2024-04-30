@@ -4,7 +4,6 @@ local mapnoremap = require("helpers.keys").mapnoremap
 -- Open Explorer
 map("n", "<leader>pv", vim.cmd.Ex)
 
-
 -- Blazingly fast way out of insert mode
 map("i", "jk", "<esc>")
 
@@ -65,6 +64,11 @@ map(
     "oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
 )
 
+-- Add a new line in insert mode
+map("i", "<C-Enter>", "<Esc>o")
+
+-- Remove trailing chars from pasting
+map("n", ",m", function() vim.cmd(":%s/\r//g") end)
 -- Init Files
 map("n", "<leader><leader>", function()
     vim.cmd("so")

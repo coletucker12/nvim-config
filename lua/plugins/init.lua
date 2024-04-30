@@ -18,4 +18,11 @@ return {
             url_open.setup({})
         end,
     },
+    {
+        "kawre/neotab.nvim",
+        event = "InsertEnter",
+        opts = {
+            -- configuration goes here
+        },
+    }
 }

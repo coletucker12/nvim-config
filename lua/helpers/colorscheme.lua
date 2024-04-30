@@ -16,11 +16,12 @@ local function get_if_available(name, opts)
 end
 
 -- Uncomment the colorscheme to use
-local colorscheme = get_if_available("darcula-solid")
--- local colorscheme = get_if_available("catppuccin")
+local colorscheme = get_if_available('onedark')
+-- local colorscheme = get_if_available("catppuccin-frappe")
+-- local colorscheme = get_if_available('rose-pine-moon')
+-- local colorscheme = get_if_available("darcula-solid")
+-- local colorscheme = get_if_available('darcula-dark')
 -- local colorscheme = get_if_available('gruvbox')
--- local colorscheme = get_if_available('rose-pine')
--- local colorscheme = get_if_available('everforest')
--- local colorscheme = get_if_available('melange')
+-- local colorscheme = get_if_available('tokyonight')
 
 return colorscheme

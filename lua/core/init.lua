@@ -39,7 +39,7 @@ autocmd('LspAttach', {
         vim.keymap.set("n", "<C-Space>", function() vim.lsp.buf.hover() end, opts)
         vim.keymap.set("n", "<leader>ws", function() vim.lsp.buf.workspace_symbol() end, opts)
         vim.keymap.set("n", "<leader>d", function() vim.diagnostic.open_float() end, opts)
-        vim.keymap.set("n", "<leader>sa", function() vim.lsp.buf.code_action() end, opts)
+        vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
         vim.keymap.set("n", "<leader>su", function() vim.lsp.buf.references() end, opts)
         vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
         vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
